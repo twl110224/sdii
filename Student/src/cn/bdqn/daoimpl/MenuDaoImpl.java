@@ -9,6 +9,7 @@ import java.util.List;
 
 import cn.bdqn.Dao.Basedao;
 import cn.bdqn.Dao.MenuDao;
+import cn.bdqn.entity.Btn;
 import cn.bdqn.entity.Menu;
 
 public class MenuDaoImpl extends Basedao implements MenuDao {
@@ -137,6 +138,23 @@ public class MenuDaoImpl extends Basedao implements MenuDao {
 			this.closeAll(conn, pre, rs);
 		}
 		return count;
+	}
+
+	@Override
+	public List<Btn> selectBtn() {
+		return null;
+	}
+
+	@Override
+	public int insertQx(Menu ys) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Menu> seqxList(int type) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
